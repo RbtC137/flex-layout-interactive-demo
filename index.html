@@ -7,35 +7,60 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>This page is intended to you understand more about flex layout in a interactive way.</h1>
+    <h1>Interactive flex box demostration</h1>
     <div id="container">
-        <div id="display-area"></div>
+        <div id="display-area">
+            <div class="info-msg">
+                <pre>
+                        Please click "Add" button first to put some div boxes in this display area, 
+                        and then use style button on the right to apply different styles to these div boxses.
+              Hope this app could help.
+                </pre>
+             </div>
+            </div>
         <div id="control-panel">
-            <button id="add-block">Add</button>
-            <button id="del-block">Delete</button>
-            <h3>Modify Direction</h3>
-            <button class="mod-button" id="row" data-key="flex-direction">Row</button>
-            <button class="mod-button" id="row-reverse" data-key="flex-direction">Row-Reverse</button>
-            <button class="mod-button" id="column" data-key="flex-direction">Column</button>
-            <button class="mod-button" id="column-reverse" data-key="flex-direction">Column-Reverse</button>
-            <h3>修改换行方式</h3>
-            <button class="mod-button" id="nowrap" data-key="flex-wrap">Nowrap</button>
-            <button class="mod-button" id="wrap" data-key="flex-wrap">Wrap</button>
-            <button class="mod-button" id="wrap-reverse" data-key="flex-wrap">Wrap-Reverse</button>
-            <h3>修改对齐方向</h3>
-            <h4>主轴</h4>
-            <button class="mod-button" id="flex-start" data-key="justify-content">Flex-Start</button>
-            <button class="mod-button" id="flex-end" data-key="justify-content">Flex-End</button>
-            <button class="mod-button" id="center" data-key="justify-content">Center</button>
-            <button class="mod-button" id="space-between" data-key="justify-content">Space-Between</button>
-            <button class="mod-button" id="space-around" data-key="justify-content">Space-Around</button>
-            <button class="mod-button" id="space-evenly" data-key="justify-content">Space-Evenly</button>
-            <h4>侧轴</h4>
-            <button class="mod-button" id="flex-start" data-key="align-items">Flex-Start</button>
-            <button class="mod-button" id="flex-end" data-key="align-items">Flex-End</button>
-            <button class="mod-button" id="center" data-key="align-items">Center</button>
-            <button class="mod-button" id="baseline" data-key="align-items">Baseline</button>
-            <button class="mod-button" id="stretch" data-key="align-items">Stretch</button>
+            <div class="section1">
+                <h3>Add & Remove Blocks</h3>
+                <button id="add-block">Add</button>
+                <button id="del-block">Delete</button>
+            </div>
+            <div class="section2">
+                <h3>Modify Direction (flex-direction)</h3>
+                <button class="mod-button" id="row" data-key="flex-direction">Row</button>
+                <button class="mod-button" id="row-reverse" data-key="flex-direction">Row-Reverse</button>
+                <button class="mod-button" id="column" data-key="flex-direction">Column</button>
+                <button class="mod-button" id="column-reverse" data-key="flex-direction">Column-Reverse</button>
+                <h3>Modify Multi-line Wrap (flex-wrap)</h3>
+                <button class="mod-button" id="nowrap" data-key="flex-wrap">Nowrap</button>
+                <button class="mod-button" id="wrap" data-key="flex-wrap">Wrap</button>
+                <button class="mod-button" id="wrap-reverse" data-key="flex-wrap">Wrap-Reverse</button>
+            </div>
+            <div class="section3">                
+                <h3>Modify Axis</h3>
+                <h4>Main Axis (justify-content)</h4>
+                <button class="mod-button" id="flex-start" data-key="justify-content">Flex-Start</button>
+                <button class="mod-button" id="flex-end" data-key="justify-content">Flex-End</button>
+                <button class="mod-button" id="center" data-key="justify-content">Center</button>
+                <button class="mod-button" id="space-between" data-key="justify-content">Space-Between</button>
+                <button class="mod-button" id="space-around" data-key="justify-content">Space-Around</button>
+                <button class="mod-button" id="space-evenly" data-key="justify-content">Space-Evenly</button>
+            </div>
+            <div class="section4">
+                <h4>Cross Axis (align-items)</h4>
+                <button class="mod-button" id="flex-start" data-key="align-items">Flex-Start</button>
+                <button class="mod-button" id="flex-end" data-key="align-items">Flex-End</button>
+                <button class="mod-button" id="center" data-key="align-items">Center</button>
+                <button class="mod-button" id="baseline" data-key="align-items">Baseline</button>
+                <button class="mod-button" id="stretch" data-key="align-items">Stretch</button>
+                <h4>Cross Axis in Multi-lines (align-content)</h4>
+                <button class="mod-button" id="flex-start" data-key="align-content">Flex-Start</button>
+                <button class="mod-button" id="flex-end" data-key="align-content">Flex-End</button>
+                <button class="mod-button" id="center" data-key="align-content">Center</button>
+                <button class="mod-button" id="space-between" data-key="align-content">Space-Between</button>
+                <button class="mod-button" id="space-around" data-key="align-content">Space-Around</button>
+                <button class="mod-button" id="space-evenly" data-key="align-content">Space-Evenly</button>
+                <button class="mod-button" id="stretch" data-key="align-content">Stretch</button>
+            </div>
         </div>
     </div>
     <script src="./script.js"></script>

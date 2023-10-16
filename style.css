@@ -9,17 +9,55 @@ body {
 #display-area {
     width: 95vw;
     height: 45vh;
-    background-color: green;
+    background-color: wheat;
     margin: 0 auto;
     display: flex;
+    border: 3px solid rgba(165, 44, 44, 0.523);
+    border-radius: 5px;
+    text-align: center;
 }
-
+.info-msg{
+    width: 40vw;
+    margin: 15vh 0;
+    font-size: 20px;
+}
 .blocks {
     height: 60px;
     width: 60px;
-    border: 2px solid white;
-    background-color: skyblue;
+    border: 2px solid rgba(165, 44, 44, 0.721);
+    background-color: burlywood;
     text-align: center;
     font-size: 20px;
     line-height: 60px;
+}
+
+#add-block,#del-block {
+    display: block;
+    width: 12vh;
+    height: 12vh;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+#control-panel {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section2,
+.section3,
+.section4{
+    /* border: 2px solid black; */
+    width: 26vw;
+}
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+button {
+    border-radius: 5px;
+    height: 5vh;
+    margin: 5px 2px;
 }
